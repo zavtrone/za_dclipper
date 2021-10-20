@@ -1,0 +1,21 @@
+[package]
+name = "za_dc_clipper"
+version = "0.1.0"
+authors = ["Zavtrone"]
+edition = "2018"
+
+[dependencies]
+baseview = { git = "https://github.com/RustAudio/baseview.git" }
+baseplug = { git = "https://github.com/wrl/baseplug.git" }
+dsp = "0.8"
+iced_audio = { version = "0.7" }
+iced_baseview = { git = "https://github.com/BillyDM/iced_baseview.git", features=["palette", "canvas"] }
+iced_style = { version = "0.3" }
+palette = { version = "0.5" }
+serde = "1"
+raw-window-handle = { version = "0.3" }
+vst = "0.2"
+
+[lib]
+name = "za_dc_clipper"
+crate-type = ["cdylib"]
